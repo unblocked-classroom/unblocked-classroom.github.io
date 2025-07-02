@@ -1,0 +1,583 @@
+/* ===== MOBILE FIRST RESPONSIVE DESIGN ===== */
+
+/* Extra Small Devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 var(--space-3);
+  }
+
+  /* Navigation */
+  .nav__menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: var(--bg-primary);
+    border-right: 1px solid var(--border-color);
+    transition: var(--transition);
+    box-shadow: var(--shadow-large);
+  }
+
+  .nav__menu.show-menu {
+    left: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    padding: var(--space-8) var(--space-4);
+    gap: var(--space-6);
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav__link {
+    font-size: var(--font-size-lg);
+    padding: var(--space-4);
+    width: 100%;
+    text-align: left;
+    border-radius: var(--border-radius);
+    transition: var(--transition-fast);
+  }
+
+  .nav__link:hover {
+    background: var(--bg-secondary);
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+  .nav__toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .nav__toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav__toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+
+
+  /* Search Section */
+  .search-section {
+    padding: var(--space-12) 0;
+  }
+
+  .search__title {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-6);
+  }
+
+  .search__box {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .search__input {
+    text-align: center;
+  }
+
+  /* Description */
+  .description {
+    padding: var(--space-8) 0;
+  }
+
+  .description__text {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+  }
+
+  /* FAQ */
+  .faq {
+    padding: var(--space-12) 0;
+  }
+
+  .faq__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .faq__item {
+    padding: var(--space-4);
+  }
+
+  .faq__question {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--space-3);
+  }
+
+  .faq__answer {
+    font-size: var(--font-size-sm);
+  }
+
+  /* Games Section */
+  .games,
+  .popular-games {
+    padding: var(--space-12) 0;
+  }
+
+  .games__header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-6);
+  }
+
+  .section__title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-8);
+  }
+
+  .games__filters {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .filter__btn {
+    flex: 1;
+    text-align: center;
+    min-width: 80px;
+  }
+
+  .games__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .game__card {
+    max-width: 100%;
+  }
+
+  .game__image {
+    height: 180px;
+  }
+
+  .game__content {
+    padding: var(--space-4);
+  }
+
+  .game__title {
+    font-size: var(--font-size-base);
+  }
+
+  /* Footer */
+  .footer {
+    padding: var(--space-12) 0 var(--space-6);
+  }
+
+  .footer__content {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    text-align: center;
+  }
+
+  .footer__links {
+    align-items: center;
+  }
+}
+
+/* Small Devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-4);
+  }
+
+  /* Navigation */
+  .nav__menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 300px;
+    height: calc(100vh - 70px);
+    background: var(--bg-primary);
+    border-right: 1px solid var(--border-color);
+    transition: var(--transition);
+    box-shadow: var(--shadow-large);
+  }
+
+  .nav__menu.show-menu {
+    left: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    padding: var(--space-8) var(--space-4);
+    gap: var(--space-6);
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+
+
+  /* FAQ */
+  .faq__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Games */
+  .games__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .games__header {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+  }
+}
+
+/* Medium Devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* FAQ */
+  .faq__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Games */
+  .games__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Navigation for tablets */
+  .nav__menu {
+    position: static;
+    height: auto;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    padding: 0;
+    gap: var(--space-6);
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+}
+
+/* Large Devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .games__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Extra Large Devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .games__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ===== MOBILE SPECIFIC OPTIMIZATIONS ===== */
+
+/* Touch-friendly interactions */
+@media (hover: none) and (pointer: coarse) {
+  .game__card:hover {
+    transform: none;
+  }
+
+  .game__card:active {
+    transform: scale(0.98);
+  }
+
+  .category__card:hover {
+    transform: none;
+  }
+
+  .category__card:active {
+    transform: scale(0.98);
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+
+  .btn:active {
+    transform: scale(0.96);
+  }
+}
+
+/* High DPI displays */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi),
+       only screen and (min-resolution: 2dppx) {
+  .game__image img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+
+  .categories__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .games__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+
+/* Focus states for keyboard navigation */
+@media (prefers-reduced-motion: no-preference) {
+  .nav__link:focus,
+  .btn:focus,
+  .search__input:focus,
+  .game__card:focus,
+  .category__card:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .game__card {
+    border: 2px solid var(--text-primary);
+  }
+
+  .category__card {
+    border: 2px solid var(--text-primary);
+  }
+
+  .btn--primary {
+    border: 2px solid var(--primary-dark);
+  }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  .header,
+  .nav__toggle,
+  .search-section,
+  .footer {
+    display: none;
+  }
+
+  .games__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  .game__card {
+    break-inside: avoid;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+}
+
+/* ===== MOBILE PERFORMANCE OPTIMIZATIONS ===== */
+
+/* Optimize scrolling performance */
+.games__grid,
+.categories__grid {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Game frame mobile optimizations */
+@media screen and (max-width: 768px) {
+  .game-frame-container {
+    padding-bottom: 62.5%; /* 16:10 aspect ratio (10/16 = 0.625) */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .game-frame-container {
+    padding-bottom: 75%; /* 4:3 aspect ratio (3/4 = 0.75) */
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .game-frame-container {
+    padding-bottom: 66.67%; /* 3:2 aspect ratio (2/3 = 0.6667) */
+  }
+}
+
+/* Prevent zoom on iOS */
+@media screen and (max-width: 768px) {
+  input[type="text"],
+  input[type="search"],
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Safe area insets for devices with notches */
+@supports (padding: max(0px)) {
+  .header {
+    padding-left: max(var(--space-4), env(safe-area-inset-left));
+    padding-right: max(var(--space-4), env(safe-area-inset-right));
+  }
+
+  .container {
+    padding-left: max(var(--space-4), env(safe-area-inset-left));
+    padding-right: max(var(--space-4), env(safe-area-inset-right));
+  }
+}
+
+/* ===== MOBILE SPECIFIC ANIMATIONS ===== */
+@media (max-width: 768px) {
+  @keyframes mobileSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .game__card,
+  .category__card {
+    animation: mobileSlideUp 0.4s ease-out;
+  }
+
+  /* Stagger animation for grid items */
+  .game__card:nth-child(1) { animation-delay: 0.1s; }
+  .game__card:nth-child(2) { animation-delay: 0.2s; }
+  .game__card:nth-child(3) { animation-delay: 0.3s; }
+  .game__card:nth-child(4) { animation-delay: 0.4s; }
+  .game__card:nth-child(5) { animation-delay: 0.5s; }
+  .game__card:nth-child(6) { animation-delay: 0.6s; }
+
+  .nav__menu {
+    position: fixed;
+    top: 70px; /* Header height */
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--space-8) 0;
+    transition: left 0.3s ease-in-out;
+    gap: var(--space-8);
+    display: flex;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav__menu.show-menu {
+    left: 0;
+  }
+
+  .nav__toggle {
+    display: flex;
+    z-index: 1001;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    padding: 2px;
+  }
+
+  .nav__toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .nav__toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav__toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .nav__list {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-6);
+    width: 100%;
+    padding: 0 var(--space-4);
+  }
+  
+  .nav__link {
+    font-size: var(--font-size-lg);
+    padding: var(--space-4) var(--space-6);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.5);
+    margin-bottom: var(--space-2);
+  }
+  
+  .nav__link:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .game-frame-container {
+    height: 350px;
+  }
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+    .nav__logo {
+        height: 32px;
+    }
+    
+    .breadcrumb {
+        padding: 0.25rem 0;
+        margin-bottom: 0.25rem;
+    }
+    
+    .breadcrumb__list {
+        gap: 0.25rem;
+        font-size: var(--font-size-xs);
+    }
+    
+
+}
+
+@media screen and (max-width: 480px) {
+    .nav__logo {
+        height: 28px;
+    }
+    
+    .breadcrumb {
+        padding: 0.125rem 0;
+        margin-bottom: 0.125rem;
+    }
+    
+    .breadcrumb__list {
+        gap: 0.125rem;
+        font-size: 11px;
+    }
+    
+    .breadcrumb__item {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 120px;
+    }
+} 
+ 

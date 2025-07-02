@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://Unblocked-Classroom.github.io/sitemap.xml
+
+# Allow search engines to crawl all content
+Allow: /index.html
+Allow: /about.html
+Allow: /games/
+Allow: /assets/
+
+# Preferred crawl delay (optional)
+Crawl-delay: 1
+
+# Block certain file types that don't need indexing
+Disallow: *.js$
+Disallow: *.css$
+Disallow: *.json$
+
+# Allow important directories
+Allow: /games/*.html
+Allow: /assets/images/ 
