@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://Unblocked-Classroom.github.io/sitemap.xml
+Sitemap: https://unblocked-classroom.github.io/sitemap.xml
 
 # Allow search engines to crawl all content
 Allow: /index.html
