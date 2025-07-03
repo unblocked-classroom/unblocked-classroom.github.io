@@ -1,0 +1,56 @@
+/* Inter Font - Self Hosted */
+
+/* inter-300 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Inter Light'), local('Inter-Light'),
+       url('../fonts/inter-300.woff2') format('woff2'),
+       url('../fonts/inter-400.woff') format('woff');
+}
+
+/* inter-400 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Inter Regular'), local('Inter-Regular'),
+       url('../fonts/inter-400.woff2') format('woff2'),
+       url('../fonts/inter-400.woff') format('woff');
+}
+
+/* inter-500 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Inter Medium'), local('Inter-Medium'),
+       url('../fonts/inter-500.woff2') format('woff2'),
+       url('../fonts/inter-400.woff') format('woff');
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Inter SemiBold'), local('Inter-SemiBold'),
+       url('../fonts/inter-600.woff2') format('woff2'),
+       url('../fonts/inter-400.woff') format('woff');
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Inter Bold'), local('Inter-Bold'),
+       url('../fonts/inter-700.woff2') format('woff2'),
+       url('../fonts/inter-400.woff') format('woff');
+} 
