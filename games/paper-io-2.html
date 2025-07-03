@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Play Paper Io 2 unblocked online for free! No downloads or installations required - jump right into the action in your browser. Enjoy this popular game without restrictions at school or work.">
-    <meta name="keywords" content="paper io 2, paper io 2 unblocked, paper io 2 game, play paper io 2, unblocked games, free games, browser games, online games, school games, work games">
+    <meta name="description" content="Play Paper IO 2 unblocked (paper io unblocked) online for free! No downloads or installations required - jump right into the action in your browser. Enjoy this popular multiplayer territory game without restrictions at school or work.">
+    <meta name="keywords" content="paper io 2, paper io 2 unblocked, paper io unblocked, paper io game, play paper io, unblocked games, free games, browser games, online games, school games, work games, multiplayer games, territory games">
     <meta name="author" content="GG+ Unblocked">
     <meta name="robots" content="index, follow">
 
@@ -405,15 +405,77 @@
         </div>
     </div>
 </main>
-<!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer__bottom"><p>&copy; 2025 Unblocked Classroom. All rights reserved.</p></div>
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4 class="footer__heading">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="../index.html" class="footer__link">Home</a></li>
+                        <li><a href="../categories.html" class="footer__link">All Games</a></li>
+                        <li><a href="../about.html" class="footer__link">About</a></li>
+                        <li><a href="../unblocked-sites.html" class="footer__link">Sites</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__heading">Popular Games</h4>
+                    <ul class="footer__links">
+                        <li><a href="slope.html" class="footer__link">Slopes Unblocked</a></li>
+                        <li><a href="minecraft-1-5-2.html" class="footer__link">Minecraft Unblocked</a></li>
+                        <li><a href="1v1-lol.html" class="footer__link">1v1 LOL Unblocked</a></li>
+                        <li><a href="paper-io-2.html" class="footer__link">Paper IO Unblocked</a></li>
+                        <li><a href="geometry-dash.html" class="footer__link">Geometry Dash Unblocked</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 Unblocked Classroom. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 <script src="../assets/js/games-data.js"></script><script src="../assets/js/main.js"></script>
 <script>
-    function toggleFullscreen() { const f = document.getElementById("game-frame"); f.requestFullscreen().catch(err => console.error(err)); }
+            function toggleFullscreen() {
+            const iframe = document.getElementById("game-frame");
+            
+            // Check if we're already in fullscreen
+            if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+                // Exit fullscreen
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+            } else {
+                // Enter fullscreen - cross-browser support
+                if (iframe.requestFullscreen) {
+                    iframe.requestFullscreen();
+                } else if (iframe.webkitRequestFullscreen) {
+                    iframe.webkitRequestFullscreen();
+                } else if (iframe.webkitRequestFullScreen) { // Safari compatibility
+                    iframe.webkitRequestFullScreen();
+                } else if (iframe.mozRequestFullScreen) {
+                    iframe.mozRequestFullScreen();
+                } else if (iframe.msRequestFullscreen) {
+                    iframe.msRequestFullscreen();
+                } else {
+                    // Fallback for mobile devices that don't support iframe fullscreen
+                    const container = iframe.parentElement;
+                    if (container.requestFullscreen) {
+                        container.requestFullscreen();
+                    } else if (container.webkitRequestFullscreen) {
+                        container.webkitRequestFullscreen();
+                    }
+                }
+            }
+        }
     // Like button logic here...
 </script>
 </body></html>
