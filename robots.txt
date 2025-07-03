@@ -10,8 +10,6 @@ Allow: /about.html
 Allow: /games/
 Allow: /assets/
 
-# Preferred crawl delay (optional)
-Crawl-delay: 1
 
 # Block certain file types that don't need indexing
 Disallow: *.js$
