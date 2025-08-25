@@ -1,0 +1,34 @@
+{
+  "name": "GG+ Unblocked - Free Online Games",
+  "short_name": "GG+ Unblocked",
+  "description": "Play hundreds of unblocked games for free! No downloads required - perfect for school and work.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#0f4c75",
+  "orientation": "any",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "fav.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "fav.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["games", "entertainment", "education"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

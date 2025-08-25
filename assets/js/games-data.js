@@ -1054,6 +1054,15 @@ const gamesData = [
     "trending": false
   },
   {
+    "title": "Fireboy and Watergirl in the Forest Temple",
+    "gameLink": "https://html5.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75/?utm_source=coolmathgames.com&utm_medium=fireboy-and-watergirl-1-forest-temple&utm_campaign=block-and-redirect",
+    "iconLink": "games-data/fireboy-and-watergirl.png",
+    "category": "puzzle",
+    "popular": true,
+    "new": true,
+    "trending": true
+  },
+  {
     "title": "Five Nights at Freddy's 2",
     "gameLink": "https://sudoku-online.github.io/a7/five-nights-at-freddys-2",
     "iconLink": "games-data/five-nights-at-freddys.png",
