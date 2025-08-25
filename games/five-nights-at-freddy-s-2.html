@@ -16,6 +16,71 @@
     
     <!-- Fonts -->
     <link rel="stylesheet" href="../assets/css/fonts.css">
+    <style>
+        /* Ad Container Styles */
+        .ad-container {
+            width: 100%;
+            margin: 15px auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ad-top {
+            max-width: 970px;
+            margin: 10px auto 20px;
+        }
+        
+        .ad-sidebar {
+            max-width: 300px;
+            min-height: 600px;
+            margin: 0 auto 20px;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .ad-content {
+            max-width: 336px;
+            margin: 25px auto;
+        }
+        
+        .ad-native {
+            max-width: 728px;
+            margin: 20px auto;
+        }
+        
+        /* Responsive behavior */
+        @media (max-width: 970px) {
+            .ad-top ins {
+                width: 728px !important;
+                height: 90px !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .ad-sidebar {
+                display: none;
+            }
+            
+            .ad-top ins {
+                width: 320px !important;
+                height: 100px !important;
+            }
+            
+            .ad-content ins,
+            .ad-native ins {
+                width: 320px !important;
+                height: 100px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .ad-container {
+                margin: 10px auto;
+            }
+        }
+    </style>
 <link rel="canonical" href="https://unblocked-classroom.github.io/games/five-nights-at-freddy-s-2.html" />
 </head>
 <body>
