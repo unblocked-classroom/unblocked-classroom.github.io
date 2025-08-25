@@ -37,7 +37,8 @@
     <title>Recoil Unblocked - Play Free Online | GG+ Unblocked</title>
     <link rel="stylesheet" href="../assets/css/style.css"><link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/fonts.css">
-    <style>
+    
+    <!-- AdSense Script (Load Once) --><style>
         /* Ad Container Styles */
         .ad-container {
             width: 100%;
@@ -156,16 +157,10 @@
     </nav>
 
 <!-- Top Banner Ad -->
-<div class="ad-container ad-top">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5058497572322994" crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
+<div class="ad-container ad-top"><ins class="adsbygoogle"
          style="display:inline-block;width:970px;height:250px"
          data-ad-client="ca-pub-5058497572322994"
-         data-ad-slot="1981667983"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-</div>
+         data-ad-slot="1981667983"></ins></div>
 
 <main class="game-page">
     <div class="game-container">
@@ -323,16 +318,10 @@
             </div>
                         
             <!-- In-Content Ad -->
-            <div class="ad-container ad-content">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5058497572322994" crossorigin="anonymous"></script>
-                <ins class="adsbygoogle"
+            <div class="ad-container ad-content"><ins class="adsbygoogle"
                      style="display:inline-block;width:336px;height:280px"
                      data-ad-client="ca-pub-5058497572322994"
-                     data-ad-slot="4902773974"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
+                     data-ad-slot="4902773974"></ins></div>
             
             
 
@@ -565,5 +554,21 @@
             }
         }
     // Like button logic here...
+</script>
+
+<script id="adsbygoogle-init">
+// Initialize all ads after page load
+window.addEventListener('load', function() {
+    const ads = document.querySelectorAll('.adsbygoogle');
+    ads.forEach(function(ad) {
+        if (!ad.hasAttribute('data-adsbygoogle-status')) {
+            try {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (e) {
+                console.log('AdSense initialization skipped for one ad unit');
+            }
+        }
+    });
+});
 </script>
 </body></html>
