@@ -286,12 +286,18 @@ class GameSite {
   }
 
   createGameCard(game, index) {
-    const gameCard = document.createElement('div');
-    gameCard.className = 'game-item fade-in-up';
-    gameCard.style.animationDelay = `${(index % 12) * 0.1}s`;
-    
     const slug = createGameSlug(game.title);
     const iconSrc = game.iconLink || `games-data/${slug}.png`;
+    
+    // Check if we're already in games directory
+    const currentPath = window.location.pathname;
+    const gameUrl = currentPath.includes('/games/') ? `${slug}.html` : `games/${slug}.html`;
+    
+    // Create pure HTML link element - no JavaScript navigation
+    const gameCard = document.createElement('a');
+    gameCard.href = gameUrl;
+    gameCard.className = 'game-item fade-in-up';
+    gameCard.style.animationDelay = `${(index % 12) * 0.1}s`;
     
     gameCard.innerHTML = `
       <img src="${iconSrc}" alt="${game.title}" class="game-item-icon">
@@ -300,26 +306,6 @@ class GameSite {
       ${game.new ? '<span class="game__badge game__badge--new">New</span>' : ''}
       ${game.trending ? '<span class="game__badge game__badge--trending">Trending</span>' : ''}
     `;
-    
-    // Add click handler to redirect to game page
-    gameCard.addEventListener('click', () => {
-      // Check if we're already in games directory
-      const currentPath = window.location.pathname;
-      const gameUrl = currentPath.includes('/games/') ? `${slug}.html` : `games/${slug}.html`;
-      window.location.href = gameUrl;
-    });
-    
-    // Add keyboard navigation
-    gameCard.setAttribute('tabindex', '0');
-    gameCard.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        // Check if we're already in games directory
-        const currentPath = window.location.pathname;
-        const gameUrl = currentPath.includes('/games/') ? `${slug}.html` : `games/${slug}.html`;
-        window.location.href = gameUrl;
-      }
-    });
     
     return gameCard;
   }
@@ -510,11 +496,7 @@ document.addEventListener('DOMContentLoaded', () => {
   new GameSite();
 });
 
-// Handle browser back/forward buttons
-window.addEventListener('popstate', (e) => {
-  // Handle state changes if needed
-  location.reload();
-});
+// Removed popstate handler to prevent unnecessary page reloads
 
 // Preload critical resources
 const preloadLinks = [
