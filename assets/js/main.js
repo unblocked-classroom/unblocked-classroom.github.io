@@ -303,7 +303,16 @@ class GameSite {
     
     // Add click handler to redirect to game page
     gameCard.addEventListener('click', () => {
-      window.location.href = `games/${slug}.html`;
+      // Smooth navigation to prevent vignette overlay issues
+        const gameUrl = `games/${slug}.html`;
+        
+        // Use pushState for smoother navigation
+        if (window.history && window.history.pushState) {
+            window.history.pushState(null, null, gameUrl);
+            window.location.assign(gameUrl);
+        } else {
+            window.location.href = gameUrl;
+        }
     });
     
     // Add keyboard navigation
@@ -311,7 +320,16 @@ class GameSite {
     gameCard.addEventListener('keypress', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        window.location.href = `games/${slug}.html`;
+        // Smooth navigation to prevent vignette overlay issues
+        const gameUrl = `games/${slug}.html`;
+        
+        // Use pushState for smoother navigation
+        if (window.history && window.history.pushState) {
+            window.history.pushState(null, null, gameUrl);
+            window.location.assign(gameUrl);
+        } else {
+            window.location.href = gameUrl;
+        }
       }
     });
     
