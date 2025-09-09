@@ -1,21 +1,21 @@
-# Unblocked Classroom – Play Free Games Online
+# Unblocked Classroom – Free Online Games Anywhere
 
-Welcome to **Unblocked Classroom**, your trusted hub for playing free **unblocked games online** anytime, anywhere.  
-Our platform makes it simple for students, workers, and casual players to enjoy games without restrictions.  
+Welcome to **Unblocked Classroom**, the ultimate place to play **free unblocked games online** at school, work, or home.  
+Our platform provides fast-loading, browser-based games that work without downloads, VPNs, or logins.  
 
 ## 🎮 What is Unblocked Classroom?
 
-**Unblocked Classroom** is a browser-based collection of **unblocked HTML5 and Flash games**.  
-We focus on speed, fun, and accessibility — play instantly from your browser without downloads or VPNs.
+**Unblocked Classroom** is a collection of hand-picked **HTML5 and Flash unblocked games** that you can play directly in your browser.  
+Designed for speed, fun, and accessibility — we make gaming possible anywhere, even on restricted networks.  
 
 - ✅ 100% Free to Play  
-- ✅ Works on school and office networks  
-- ✅ Mobile and desktop friendly  
+- ✅ Works on school and office WiFi  
+- ✅ Mobile, tablet, and desktop friendly  
 - ✅ New games added regularly  
 
-## 🚀 Popular Unblocked Games
+## 🚀 Popular Games
 
-Some of the top games you’ll find on **Unblocked Classroom** include:
+Some of the top games you can enjoy on **Unblocked Classroom**:
 
 - 🟢 Slope  
 - 🟢 Subway Surfers  
@@ -25,43 +25,30 @@ Some of the top games you’ll find on **Unblocked Classroom** include:
 - 🟢 Cookie Clicker  
 - 🟢 Retro Bowl  
 
-👉 Explore our full [Unblocked Games Library](https://unblocked-classroom.github.io).  
+👉 Explore the full [Unblocked Games Library](https://unblocked-classroom.github.io).  
 
 ## 🔎 Why Choose Unblocked Classroom?
 
-- ⚡ **Fast loading** – optimized for smooth gameplay  
-- 🌐 **Unblocked access** – play anywhere, even at school or work  
-- 📱 **Cross-device** – works on phones, tablets, laptops, and TVs  
-- 🕹️ **Huge variety** – from classics to trending games  
+- ⚡ **Fast loading gameplay** – optimized for smooth performance  
+- 🌐 **Unblocked anywhere** – play at school, work, or home  
+- 📱 **Cross-device support** – works on phones, tablets, laptops, and TVs  
+- 🕹️ **Huge selection** – from classic arcade to trending titles  
 
-## 📈 SEO Keywords
-
-This project targets the following keywords for better visibility:  
-
-- unblocked classroom  
-- unblocked games  
-- free online games unblocked  
-- play games at school unblocked  
-- slope unblocked  
-- 1v1.lol unblocked  
-- fun unblocked games  
-
-## 📚 How to Use
+## 📚 How to Play
 
 1. Visit 👉 [unblocked-classroom.github.io](https://unblocked-classroom.github.io)  
-2. Browse the library of games  
-3. Click **Play** and start instantly  
+2. Browse the games library  
+3. Click **Play** and enjoy instantly  
 
-No installation. No signup. Just play.  
+No installs. No signup. Just play.  
 
-## 💡 Contribute
+## 🔧 Forking Rules
 
-Want to add new games or features? Fork this repo, make changes, and submit a pull request.  
+You can fork this repo and host your own version, **but you must follow these rules**:  
 
-## 📜 License
+- ✅ **Include a link to the original site**  
+- ✅ **Give proper credits**  
 
-This project is open-source and free to use. All game content belongs to their respective owners.  
+Do not:  
 
----
-
-🔥 Start playing now at [Unblocked Classroom](https://unblocked-classroom.github.io)!
+- ❌ **Rebrand the site as your own**  
